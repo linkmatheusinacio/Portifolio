@@ -1,0 +1,109 @@
+/* Definições gerais para o corpo do documento */
+body {
+    margin: 0; /* Margem zero para remover margens padrão */
+    padding: 0; /* Preenchimento zero para remover preenchimento padrão */
+    font-family: Arial, sans-serif; /* Definição da fonte padrão */
+    background: url('./Desfocada.jpg') center/cover no-repeat; /* Configuração do plano de fundo */
+    background-color: black; /* Cor de fundo */
+}
+
+/* Container principal centralizado na página */
+.wrapper {
+    display: flex; /* Usar flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    height: 100vh; /* Altura total da tela */
+    background-color: rgba(2, 2, 2, 0.238); /* Cor de fundo semitransparente */
+}
+
+/* Estilo do perfil */
+.perfil {
+    width: 300px; /* Largura do perfil */
+    height: 300px; /* Altura do perfil */
+    overflow: hidden; /* Esconder conteúdo que ultrapassar os limites */
+    border: 5px solid rgb(0, 0, 0); /* Borda sólida com cor preta */
+    border-radius: 30px; /* Bordas arredondadas */
+    border-width: 3px; /* Espessura da borda */
+    margin-top: 50px; /* Margem superior */
+    text-align: center; /* Alinhamento do texto centralizado */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semitransparente */
+}
+
+/* Estilo do quadro da foto */
+.quadro-foto {
+    width: 100%; /* Largura total do quadro */
+    height: 100%; /* Altura total do quadro */
+    overflow: hidden; /* Esconder conteúdo que ultrapassar os limites */
+}
+
+/* Estilo da foto de perfil */
+.perfil img {
+    width: 100%; /* Largura total da imagem */
+    height: 100%; /* Altura total da imagem */
+    object-fit: cover; /* Manter proporções e cortar para ajustar */
+}
+
+/* Sobreposição com informações sobre o perfil */
+.sobreposicao {
+    position: sticky; /* Posicionamento relativo ao viewport */
+    bottom: 0; /* Colar na parte inferior */
+    left: 0; /* Colar na parte esquerda */
+    width: 100%; /* Largura total */
+    background-color: rgba(0, 0, 0, 0.76); /* Cor de fundo semitransparente */
+    box-sizing: border-box; /* Incluir padding e borda no tamanho total */
+    padding: 10px 0 1%; /* Preenchimento superior e inferior */
+}
+
+/* Matheus Nunes Inácio */
+.reddit-mono-leve {
+    font-family: "Reddit Mono", monospace; /* Usar fonte monoespaçada */
+    font-optical-sizing: auto; /* Ajuste óptico automático */
+    font-weight:bold; /*fonte em Negrito*/
+    color: white; /* Cor do texto */
+    margin: -3px; /* Margem externa */
+}
+/*Estudante de TI | Unicesumar Maringá*/
+.reddit-mono-regular {
+    font-family: "Reddit Mono", monospace; /* Usar fonte monoespaçada */
+    font-optical-sizing: auto; /* Ajuste óptico automático */
+    font-weight:normal; /*fonte normal*/
+    color: white; /* Cor do texto */
+    margin: 11px; /* Margem externa */
+}
+
+/* Estilo dos ícones de redes sociais */
+.icone-social {
+    text-decoration: none; /* Remover decoração do link */
+    font-size: 17px; /* Tamanho da fonte */
+    display: inline-block; /* Exibir como bloco em linha */
+    width: 40px; /* Largura do ícone */
+    height: 40px; /* Altura do ícone */
+    line-height: 40px; /* Alinhamento vertical do texto */
+    border: 2px solid white; /* Borda sólida */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 5px; /* Margem entre os itens */
+    font-size: 21px; /* Tamanho da fonte */
+}
+
+/* Estilos personalizados para cada rede social */
+.linkedin { color: #6797da; border-color: #2962b1; } /* Cor e borda para LinkedIn */
+.email { color: #fff; border-color: white; } /* Cor e borda para Email */
+.whatsapp { color: hsl(149, 100%, 50%); border-color: hsl(149, 100%, 50%); } /* Cor e borda para WhatsApp */
+.instagram { color: #dcbe86; border-color: #b2884f; } /* Cor e borda para Instagram */
+
+
+/* Estilo dos ícones de redes sociais ao passar o mouse */
+.icone-social:hover {
+    filter: brightness(60%); /* Reduzir o brilho do ícone ao passar o mouse */
+}
+
+
+/* Estilo para exibir os ícones em linha */
+.emlinha {
+    display: flex; /* Exibir os ícones em linha usando flexbox */
+    justify-content: center; /* Centralizar os ícones horizontalmente */
+    align-items: center; /* Centralizar os ícones verticalmente */
+    list-style-type: none; /* Remover marcadores de lista */
+    padding: 0; /* Remover preenchimento */
+    margin: 0; /* Remover margem */
+}
